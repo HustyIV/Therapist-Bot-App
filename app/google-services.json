@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "252507416253",
+    "project_id": "therapistbot-c36e9",
+    "storage_bucket": "therapistbot-c36e9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252507416253:android:6bef3f36e6bde9c4ae79d4",
+        "android_client_info": {
+          "package_name": "com.example.therapistbot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5xBWVa_MDf6t_jZzxrxAAAjJWWDWC-m0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
