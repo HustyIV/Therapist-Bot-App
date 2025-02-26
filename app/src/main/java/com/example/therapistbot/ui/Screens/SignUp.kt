@@ -109,8 +109,7 @@ fun SignUpScreen (
         Button(onClick = { viewModel.signUpUser(email, password) },
             modifier = Modifier.padding(40.dp)
                 .fillMaxWidth(),
-            shape = RoundedCornerShape(6.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color.Blue)
+            shape = RoundedCornerShape(6.dp)
         ){
             Text(text = "Create account")
 
@@ -127,8 +126,7 @@ fun SignUpScreen (
         }
 
         TextButton(onClick = { navController.navigate("login") }) {
-            Text(text = "Already have an account? Sign in",
-                color = Color.Blue,)
+            Text(text = "Already have an account? Sign in")
         }
 
     }
