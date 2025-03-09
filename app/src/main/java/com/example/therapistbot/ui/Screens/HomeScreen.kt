@@ -1,31 +1,83 @@
 package com.example.therapistbot.ui.Screens
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Notifications
+import androidx.compose.material.icons.filled.Person
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.autofill.AutofillType
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import java.util.Calendar
 
 @Composable
 fun HomeScreen(
     navController: NavHostController,
-    modifier: Modifier = Modifier
+   modifier: Modifier = Modifier
 ){
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            ,
-        contentAlignment = Alignment.Center
+ TopBar()
+}
+@Composable
+fun TopBar(
 
+) {
+    val navController= rememberNavController()
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(35.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.SpaceBetween
     ) {
-        Greeting()
+        // Profile Icon
+        Icon(
+            imageVector = Icons.Default.Person,
+            contentDescription = "Profile",
+            modifier = Modifier
+                .size(40.dp)
+                .clip(CircleShape)
+                .background(Color.LightGray)
+                .padding(8.dp)
+                .clickable { }
+        )
+
+        // Greeting
+        Column {
+            Greeting()
+            Text(
+                text = "Welcome back!",
+                fontSize = 19.sp,
+                color = Color.Gray
+            )
+        }
+
+        // Notification Icon
+        IconButton(onClick = { /* Handle notification click */ }) {
+            Icon(
+                imageVector = Icons.Default.Notifications,
+                contentDescription = "Notifications"
+            )
+        }
     }
 }
 
