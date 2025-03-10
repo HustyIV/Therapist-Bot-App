@@ -67,7 +67,7 @@ fun TopBar(
             Text(
                 text = "Welcome back!",
                 fontSize = 19.sp,
-                color = Color.Gray
+                color = Color.Black
             )
         }
 
