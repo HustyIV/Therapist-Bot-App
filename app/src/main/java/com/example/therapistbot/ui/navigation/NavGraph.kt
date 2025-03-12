@@ -6,6 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.therapistbot.ui.Screens.HomeScreen
+import com.example.therapistbot.ui.Screens.ProfileScreen
 import com.example.therapistbot.ui.Screens.SignInScreen
 import com.example.therapistbot.ui.Screens.SignUpScreen
 import com.example.therapistbot.viewmodel.SignInViewModel
@@ -19,7 +20,10 @@ fun TherapistApp(){
 
         composable("login") { SignInScreen(viewModel= SignInViewModel(), navController) }
         composable("signup") { SignUpScreen(viewModel= SignUpViewModel(), navController) }
-        composable("home"){HomeScreen(navController)}}
+        composable("home"){HomeScreen(navController)}
+        composable("profile"){ProfileScreen(navController)}
+    }
+
 
 
     }
