@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Icon
@@ -51,14 +52,14 @@ fun TopBar(
     ) {
         // Profile Icon
         Icon(
-            imageVector = Icons.Default.Person,
-            contentDescription = "Profile",
+            imageVector = Icons.Default.Menu,
+            contentDescription = "menu",
             modifier = Modifier
                 .size(40.dp)
                 .clip(CircleShape)
                 .background(Color.LightGray)
                 .padding(8.dp)
-                .clickable { }
+                .clickable { navController.navigate("profile") }
         )
 
         // Greeting
