@@ -29,7 +29,7 @@ import androidx.navigation.compose.rememberNavController
 fun ProfileScreen(
     navController: NavController
 ){
-    rememberNavController()
+
 
     Column (
         modifier = Modifier.fillMaxSize(),
