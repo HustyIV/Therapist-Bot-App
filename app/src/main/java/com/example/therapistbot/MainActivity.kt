@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.example.therapistbot.ui.Screens.ProfileScreen
 import com.example.therapistbot.ui.Screens.SignInScreen
 import com.example.therapistbot.ui.Screens.SignUpScreen
 import com.example.therapistbot.ui.navigation.TherapistApp
