@@ -75,4 +75,8 @@ dependencies {
 
     // LiveData (if you use it with ViewModel)
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
+
+    //SplashScreen
+    implementation("androidx.core:core-splashscreen:1.0.1")
+
 }
