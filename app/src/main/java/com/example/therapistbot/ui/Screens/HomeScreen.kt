@@ -74,7 +74,7 @@ fun TopBar(
             contentDescription = "menu",
             modifier = Modifier
                 .size(40.dp)
-                .clip(CircleShape)
+                //.clip(CircleShape)
                 .background(Color.LightGray)
                 .padding(8.dp)
                 .clickable { navController.navigate("profile") }
@@ -83,6 +83,7 @@ fun TopBar(
         // Greeting
         Column {
             Greeting()
+            Spacer(modifier = Modifier.size(4.dp))
 
             Row {
                 Text(
@@ -125,10 +126,10 @@ fun Greeting() {
 fun greetingMessage():String{
     val hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
     return when (hour){
-        in 0..5 -> "Good Night"
-        in 6..11 -> "Good Morning"
-        in 12..17 -> "Good Afternoon"
-        else -> "Good Evening"
+        in 0..5 -> "Good Night,"
+        in 6..11 -> "Good Morning,"
+        in 12..17 -> "Good Afternoon,"
+        else -> "Good Evening,"
     }
 }
 @Preview
