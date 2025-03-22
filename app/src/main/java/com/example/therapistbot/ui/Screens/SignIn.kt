@@ -1,5 +1,6 @@
 package com.example.therapistbot.ui.Screens
 
+import android.R.id.primary
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -14,6 +15,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Fingerprint
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
@@ -34,6 +36,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.therapistbot.R
+import com.example.therapistbot.ui.theme.LightBlue
 import com.example.therapistbot.viewmodel.SignInViewModel
 
 
@@ -107,7 +110,11 @@ fun SignInScreen (
         Button(onClick = { viewModel.login(email, password) },
             modifier = Modifier.padding(40.dp)
                 .fillMaxWidth(),
-            shape = RoundedCornerShape(6.dp)
+            shape = RoundedCornerShape(6.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = LightBlue,
+                contentColor = Color.White
+            )
         ){
             Text(text = "Login")
 
