@@ -33,7 +33,7 @@ fun ProfileScreen(
 
     Column (
         modifier = Modifier.fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally
+       // horizontalAlignment = Alignment.CenterHorizontally
     ){
          Icon(
              imageVector = Icons.Default.Person,

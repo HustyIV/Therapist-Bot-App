@@ -17,6 +17,8 @@ import androidx.compose.material.icons.filled.Fingerprint
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -87,6 +89,7 @@ fun SignInScreen (
             placeholder = {Text(text = "Email")},
             onValueChange = {viewModel.updateEmail(it)},
             modifier = Modifier.padding(horizontal = 16.dp),
+
             )
 
 
@@ -127,11 +130,14 @@ fun SignInScreen (
             Icon(imageVector = Icons.Default.Fingerprint,
                 contentDescription = "Fingerprint")
             Spacer(Modifier.size(10.dp))
-            Text(text = "Login with fingerprint")
+            Text(text = "Login with fingerprint",
+                color = LightBlue)
         }
 
+
         TextButton(onClick = {navController.navigate("signup") }) {
-            Text(text = "Don't have an account? Sign Up")
+            Text(text = "Don't have an account? Sign Up",
+                color = LightBlue)
         }
 
 }

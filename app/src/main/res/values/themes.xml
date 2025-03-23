@@ -2,4 +2,14 @@
 <resources>
 
     <style name="Theme.TherapistBot" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.MyApp.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#44b7eb</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/session</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+
+        <!-- Set the theme of the Activity that directly follows your splash
+        screen. This is required. -->
+        <item name="postSplashScreenTheme">@style/Theme.TherapistBot</item>
+
+    </style>
 </resources>

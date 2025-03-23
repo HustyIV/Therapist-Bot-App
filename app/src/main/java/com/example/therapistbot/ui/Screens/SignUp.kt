@@ -35,7 +35,7 @@ import androidx.navigation.NavHostController
 import com.example.therapistbot.R
 import com.example.therapistbot.viewmodel.SignUpViewModel
 import androidx.compose.runtime.setValue
-
+import com.example.therapistbot.ui.theme.LightBlue
 
 
 @Composable
@@ -109,7 +109,11 @@ fun SignUpScreen (
         Button(onClick = { viewModel.signUpUser(email, password) },
             modifier = Modifier.padding(40.dp)
                 .fillMaxWidth(),
-            shape = RoundedCornerShape(6.dp)
+            shape = RoundedCornerShape(6.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = LightBlue,
+                contentColor = Color.White
+            )
         ){
             Text(text = "Create account")
 
@@ -122,11 +126,14 @@ fun SignUpScreen (
             Icon(imageVector = Icons.Default.Fingerprint,
                 contentDescription = "Fingerprint")
             Spacer(Modifier.size(10.dp))
-            Text(text = "Sign up with fingerprint")
+            Text(text = "Sign up with fingerprint",
+                color = LightBlue
+            )
         }
 
         TextButton(onClick = { navController.navigate("login") }) {
-            Text(text = "Already have an account? Sign in")
+            Text(text = "Already have an account? Sign in",
+                color= LightBlue)
         }
 
     }
