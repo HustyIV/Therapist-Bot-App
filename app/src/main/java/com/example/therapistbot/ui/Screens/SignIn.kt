@@ -35,6 +35,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.tooling.preview.PreviewDynamicColors
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.therapistbot.R
@@ -124,6 +125,14 @@ fun SignInScreen (
         }
         Spacer(modifier = Modifier.height(8.dp))
 
+        OutlinedButton(onClick = {},
+            modifier = Modifier.padding(40.dp)
+                .fillMaxWidth(),
+            shape = RoundedCornerShape(6.dp),
+            ) {
+            Text("Continue with google")
+        }
+
         TextButton(onClick = {},
 
         ) {
@@ -142,3 +151,4 @@ fun SignInScreen (
 
 }
 }
+
