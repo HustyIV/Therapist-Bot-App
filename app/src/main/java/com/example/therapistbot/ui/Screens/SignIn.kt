@@ -35,6 +35,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewDynamicColors
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -130,7 +131,8 @@ fun SignInScreen (
                 .fillMaxWidth(),
             shape = RoundedCornerShape(6.dp),
             ) {
-            Text("Continue with google")
+            Text("Continue with google",
+                color = LightBlue)
         }
 
         TextButton(onClick = {},
