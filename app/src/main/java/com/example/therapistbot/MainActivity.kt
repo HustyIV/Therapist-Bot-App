@@ -27,6 +27,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             TherapistBotTheme {
                 TherapistApp()
+
             }
         }
     }

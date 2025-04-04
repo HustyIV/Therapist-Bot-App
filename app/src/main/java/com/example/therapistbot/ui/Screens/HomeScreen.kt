@@ -18,6 +18,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Send
@@ -70,7 +71,7 @@ fun TopBar(
     ) {
         // Profile Icon
         Icon(
-            imageVector = Icons.Default.Menu,
+            imageVector = Icons.Default.MoreVert,
             contentDescription = "menu",
             modifier = Modifier
                 .size(40.dp)
