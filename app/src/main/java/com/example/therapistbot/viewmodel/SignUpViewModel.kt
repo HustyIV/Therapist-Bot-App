@@ -27,7 +27,6 @@ class SignUpViewModel : ViewModel(){
     }
     fun updateConfirmPassword(newConfirmPassword : String){
         confirmPassword.value = newConfirmPassword
-
     }
     fun signUpUser(email: String, password: String){
         if (password != confirmPassword.value){
